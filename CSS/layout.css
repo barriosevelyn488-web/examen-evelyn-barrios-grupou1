@@ -1,0 +1,56 @@
+.contenedor-principal{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+}
+
+.barra-navegacion{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color:var(--color-blanco);
+    padding:15px 25px;
+    box-shadow:var(--sombra-card);
+}
+
+.logo-sistema{
+    font-size:1.3rem;
+    font-weight:bold;
+}
+
+.contenedor-filtros{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.contenedor-tickets{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
+    gap:20px;
+    margin-top:30px;
+}
+
+.seccion-formulario{
+    max-width:700px;
+    margin:auto;
+    margin-top:30px;
+}
+
+.formulario-ticket{
+    background-color:white;
+    padding:25px;
+    border-radius:var(--radio-borde);
+    box-shadow:var(--sombra-card);
+}
+
+.grupo-formulario{
+    margin-bottom:15px;
+}
+
+.grupo-formulario label{
+    display:block;
+    margin-bottom:5px;
+    font-weight:bold;
+}

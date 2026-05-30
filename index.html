@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sistema de Gestión de Tickets</title>
+
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/layout.css">
+    <link rel="stylesheet" href="./CSS/components.css">
+    <link rel="stylesheet" href="./CSS/modals.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
+</head>
+<body>
+
+    <main class="contenedor-principal">
+
+        <section style="text-align:center; margin-top:100px;">
+
+            <h1>Sistema de Gestión de Tickets</h1>
+
+            <p style="margin:20px 0;">
+                Seleccione el tipo de acceso
+            </p>
+
+            <div style="display:flex; gap:20px; justify-content:center; flex-wrap:wrap;">
+
+                <button
+                    id="botonAbrirModalEmpleado"
+                    class="boton-primario">
+                    Iniciar Sesión Empleado
+                </button>
+
+                <button
+                    id="botonAbrirModalAdmin"
+                    class="boton-exito">
+                    Iniciar Sesión Admin
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- MODAL EMPLEADO -->
+
+    <div id="modalEmpleado" class="modal oculto">
+
+        <div class="modal-contenido">
+
+            <div class="modal-header">
+                <h2>Acceso Empleado</h2>
+
+                <button
+                    id="cerrarModalEmpleado"
+                    class="boton-cerrar-modal">
+                    ×
+                </button>
+            </div>
+
+            <form id="formularioLoginEmpleado">
+
+                <div class="grupo-formulario">
+                    <label>Correo</label>
+
+                    <input
+                        type="email"
+                        id="correoEmpleado"
+                        required>
+                </div>
+
+                <div class="grupo-formulario">
+                    <label>Contraseña</label>
+
+                    <input
+                        type="password"
+                        id="passwordEmpleado"
+                        required>
+                </div>
+
+                <button
+                    type="submit"
+                    class="boton-primario">
+                    Ingresar
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- MODAL ADMIN -->
+
+    <div id="modalAdmin" class="modal oculto">
+
+        <div class="modal-contenido">
+
+            <div class="modal-header">
+
+                <h2>Acceso Administrador</h2>
+
+                <button
+                    id="cerrarModalAdmin"
+                    class="boton-cerrar-modal">
+                    ×
+                </button>
+
+            </div>
+
+            <form id="formularioLoginAdmin">
+
+                <div class="grupo-formulario">
+
+                    <label>Correo</label>
+
+                    <input
+                        type="email"
+                        id="correoAdmin"
+                        required>
+
+                </div>
+
+                <div class="grupo-formulario">
+
+                    <label>Contraseña</label>
+
+                    <input
+                        type="password"
+                        id="passwordAdmin"
+                        required>
+
+                </div>
+
+                <button
+                    type="submit"
+                    class="boton-exito">
+                    Ingresar
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="./JS/login.js"></script>
+
+</body>
+</html>

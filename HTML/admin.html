@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Panel Administrador</title>
+
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/layout.css">
+    <link rel="stylesheet" href="../CSS/components.css">
+    <link rel="stylesheet" href="../CSS/modals.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+
+</head>
+<body>
+
+<nav class="barra-navegacion">
+
+    <h2>Panel Administrador</h2>
+
+    <div class="contenedor-filtros">
+
+        <button
+            class="boton-filtro"
+            data-estado="Todos">
+            Todos
+        </button>
+
+        <button
+            class="boton-filtro"
+            data-estado="Pendiente">
+            Pendientes
+        </button>
+
+        <button
+            class="boton-filtro"
+            data-estado="En Proceso">
+            En Proceso
+        </button>
+
+        <button
+            class="boton-filtro"
+            data-estado="Resuelto">
+            Resueltos
+        </button>
+
+    </div>
+
+    <button
+        id="botonCerrarSesionAdmin"
+        class="boton-peligro">
+        Salir
+    </button>
+
+</nav>
+
+<main class="contenedor-principal">
+
+    <section
+        id="contenedorTarjetasTickets"
+        class="contenedor-tickets">
+
+    </section>
+
+</main>
+
+<div
+    id="modalDetalleTicket"
+    class="modal oculto">
+
+    <div class="modal-contenido">
+
+        <div class="modal-header">
+
+            <h2>Detalle Ticket</h2>
+
+            <button
+                id="cerrarModalDetalle"
+                class="boton-cerrar-modal">
+                ×
+            </button>
+
+        </div>
+
+        <div
+            id="contenidoDetalleTicket"
+            class="modal-body">
+
+        </div>
+
+        <div class="modal-footer">
+
+            <button
+                id="botonGuardarEstado"
+                class="boton-exito">
+                Guardar
+            </button>
+
+            <button
+                id="botonEliminarTicket"
+                class="boton-peligro">
+                Eliminar
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="../JS/tickets.js"></script>
+<script src="../JS/renderizado.js"></script>
+<script src="../JS/main.js"></script>
+
+</body>
+</html>

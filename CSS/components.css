@@ -1,0 +1,87 @@
+.boton-primario{
+    background-color:var(--color-primario);
+    color:white;
+    padding:12px 20px;
+    border-radius:8px;
+}
+
+.boton-primario:hover{
+    background-color:var(--color-secundario);
+}
+
+.boton-peligro{
+    background-color:var(--color-peligro);
+    color:white;
+    padding:12px 20px;
+    border-radius:8px;
+}
+
+.boton-exito{
+    background-color:var(--color-exito);
+    color:white;
+    padding:12px 20px;
+    border-radius:8px;
+}
+
+.boton-filtro{
+    background-color:white;
+    border:1px solid #cbd5e1;
+    padding:10px 15px;
+    border-radius:8px;
+}
+
+.boton-filtro:hover{
+    background-color:#e2e8f0;
+}
+
+.tarjeta-ticket{
+    background-color:white;
+    border-radius:12px;
+    padding:20px;
+    box-shadow:var(--sombra-card);
+}
+
+.tarjeta-ticket h3{
+    margin-bottom:10px;
+}
+
+.tarjeta-ticket p{
+    margin-bottom:8px;
+}
+
+.estado-pendiente{
+    background-color:#fef3c7;
+    color:#92400e;
+    padding:6px 10px;
+    border-radius:20px;
+}
+
+.estado-proceso{
+    background-color:#dbeafe;
+    color:#1d4ed8;
+    padding:6px 10px;
+    border-radius:20px;
+}
+
+.estado-resuelto{
+    background-color:#dcfce7;
+    color:#166534;
+    padding:6px 10px;
+    border-radius:20px;
+}
+
+.mensaje-exito{
+    background-color:#dcfce7;
+    color:#166534;
+    padding:12px;
+    border-radius:8px;
+    margin-top:15px;
+}
+
+.mensaje-error{
+    background-color:#fee2e2;
+    color:#991b1b;
+    padding:12px;
+    border-radius:8px;
+    margin-top:15px;
+}

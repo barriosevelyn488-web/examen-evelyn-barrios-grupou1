@@ -1,0 +1,40 @@
+@media(max-width:768px){
+
+    .barra-navegacion{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .contenedor-filtros{
+        justify-content:center;
+    }
+
+    .modal-contenido{
+        width:95%;
+    }
+
+    .formulario-ticket{
+        padding:20px;
+    }
+}
+
+@media(max-width:480px){
+
+    .contenedor-principal{
+        width:95%;
+    }
+
+    .tarjeta-ticket{
+        padding:15px;
+    }
+
+    .boton-primario,
+    .boton-exito,
+    .boton-peligro{
+        width:100%;
+    }
+
+    .modal-footer{
+        flex-direction:column;
+    }
+}

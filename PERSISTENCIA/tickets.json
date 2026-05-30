@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1748560000000,
+    "nombreSolicitante": "Juan Pérez",
+    "departamento": "Contabilidad",
+    "tipoProblema": "Hardware",
+    "descripcionProblema": "La impresora no responde",
+    "prioridad": "Alta",
+    "fechaCreacion": "2026-05-30",
+    "estado": "Pendiente"
+  },
+  {
+    "id": 1748561000000,
+    "nombreSolicitante": "María López",
+    "departamento": "Ventas",
+    "tipoProblema": "Software",
+    "descripcionProblema": "No puede ingresar al sistema",
+    "prioridad": "Media",
+    "fechaCreacion": "2026-05-30",
+    "estado": "En Proceso"
+  },
+  {
+    "nombreSolicitante": "Evelyn Barrios",
+    "departamento": "Guatemala",
+    "tipoProblema": "Software",
+    "descripcionProblema": "el software utilizado de manera general lleva 1 hora sin funcionar",
+    "prioridad": "Alta",
+    "fechaCreacion": "2026-05-30",
+    "id": 1780122728883,
+    "estado": "Pendiente"
+  }
+]

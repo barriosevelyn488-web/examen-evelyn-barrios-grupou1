@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portal Empleado</title>
+
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/layout.css">
+    <link rel="stylesheet" href="../CSS/components.css">
+    <link rel="stylesheet" href="../CSS/modals.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+
+</head>
+<body>
+
+<nav class="barra-navegacion">
+
+    <h2>Portal Empleado</h2>
+
+    <button
+        id="botonCerrarSesionEmpleado"
+        class="boton-peligro">
+        Salir
+    </button>
+
+</nav>
+
+<main class="contenedor-principal">
+
+    <section class="seccion-formulario">
+
+        <form
+            id="formularioNuevoTicket"
+            class="formulario-ticket">
+
+            <h2>Registrar Nuevo Ticket</h2>
+
+            <br>
+
+            <div class="grupo-formulario">
+
+                <label>Nombre del Solicitante</label>
+
+                <input
+                    type="text"
+                    id="inputNombreSolicitante"
+                    required>
+
+            </div>
+
+            <div class="grupo-formulario">
+
+                <label>Departamento</label>
+
+                <input
+                    type="text"
+                    id="inputDepartamento"
+                    required>
+
+            </div>
+
+            <div class="grupo-formulario">
+
+                <label>Tipo de Problema</label>
+
+                <select
+                    id="inputTipoProblema"
+                    required>
+
+                    <option value="">
+                        Seleccione
+                    </option>
+
+                    <option value="Hardware">
+                        Hardware
+                    </option>
+
+                    <option value="Software">
+                        Software
+                    </option>
+
+                    <option value="Red">
+                        Red
+                    </option>
+
+                </select>
+
+            </div>
+
+            <div class="grupo-formulario">
+
+                <label>Descripción</label>
+
+                <textarea
+                    id="inputDescripcionProblema"
+                    required></textarea>
+
+            </div>
+
+            <div class="grupo-formulario">
+
+                <label>Prioridad</label>
+
+                <select
+                    id="inputPrioridad"
+                    required>
+
+                    <option value="">
+                        Seleccione
+                    </option>
+
+                    <option value="Baja">
+                        Baja
+                    </option>
+
+                    <option value="Media">
+                        Media
+                    </option>
+
+                    <option value="Alta">
+                        Alta
+                    </option>
+
+                </select>
+
+            </div>
+
+            <div class="grupo-formulario">
+
+                <label>Fecha</label>
+
+                <input
+                    type="date"
+                    id="inputFechaCreacion"
+                    readonly>
+
+            </div>
+
+            <button
+                type="submit"
+                class="boton-primario">
+
+                Registrar Ticket
+
+            </button>
+
+            <div id="mensajeEmpleado"></div>
+
+        </form>
+
+    </section>
+
+</main>
+
+<script src="../JS/tickets.js"></script>
+<script src="../JS/main.js"></script>
+
+</body>
+</html>

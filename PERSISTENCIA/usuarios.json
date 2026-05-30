@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "rol": "admin",
+    "nombre": "Administrador",
+    "correo": "admin@gmail.com",
+    "password": "Admin123"
+  },
+  {
+    "id": 2,
+    "rol": "empleado",
+    "nombre": "Empleado",
+    "correo": "empleado@gmail.com",
+    "password": "empleado123"
+  }
+]
