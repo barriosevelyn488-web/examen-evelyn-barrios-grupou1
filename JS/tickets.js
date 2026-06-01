@@ -1,4 +1,5 @@
-const URL_API_TICKETS = "http://localhost:3000/api/tickets";
+// CORRECCIÓN: Cambiada la URL local por la URL en vivo de tu Backend en Render
+const URL_API_TICKETS = "https://examen-evelyn-barrios-grupou1.onrender.com/api/tickets";
 
 async function obtenerTicketsRegistrados() {
 

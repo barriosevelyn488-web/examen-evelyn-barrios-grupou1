@@ -1,4 +1,5 @@
-const URL_API = "http://localhost:3000/api";
+// CORRECCIÓN: Apuntar a la URL de producción en Render en lugar de localhost
+const URL_API = "https://examen-evelyn-barrios-grupou1.onrender.com/api";
 
 document.addEventListener("DOMContentLoaded", () => {
     inicializarEventosLogin();

@@ -4,7 +4,9 @@ const fs = require("fs").promises;
 const path = require("path");
 
 const aplicacion = express();
-const PUERTO = 3000;
+
+// CORRECCIÓN: Render asigna el puerto automáticamente. Si no existe, usa el 3000 local.
+const PUERTO = process.env.PORT || 3000;
 
 aplicacion.use(cors());
 aplicacion.use(express.json());
@@ -387,9 +389,6 @@ aplicacion.delete(
 aplicacion.listen(
     PUERTO,
     () => {
-
-        console.log(
-            `Servidor ejecutándose en http://localhost:${PUERTO}`
-        );
+        console.log(`Servidor ejecutándose exitosamente en el puerto ${PUERTO}`);
     }
 );
